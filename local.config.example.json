@@ -1,0 +1,10 @@
+{
+  "agentHome": "C:\\Users\\you\\aiagent",
+  "stateDir": "C:\\Users\\you\\aiagent\\.state",
+  "odDataDir": "%APPDATA%\\Open Design\\namespaces\\release-stable-win\\data",
+  "sessionRoots": [
+    "C:\\Users\\you\\aiagent\\codex",
+    "C:\\Users\\you\\aiagent\\claudecode",
+    "C:\\Users\\you\\aiagent\\dsh"
+  ]
+}

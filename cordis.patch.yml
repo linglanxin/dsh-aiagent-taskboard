@@ -1,0 +1,8 @@
+# dsh-aiagent-taskboard bundle layer.
+#
+# A profile that installs by hand appends the same insert block to its own
+# cordis.patch.yml; tools/install.ps1 does that for you, and tools/uninstall.ps1
+# takes it away again.
+- insert:
+    - id: aiagent-taskboard
+      name: dsh-aiagent-taskboard

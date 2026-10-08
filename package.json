@@ -1,0 +1,55 @@
+{
+  "name": "dsh-aiagent-taskboard",
+  "version": "0.1.0",
+  "description": "Minimal live taskboard: what Claude Code / Codex / DSH / Open Design are doing right now.",
+  "type": "module",
+  "license": "MIT",
+  "author": "linglanxin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linglanxin/dsh-aiagent-taskboard.git"
+  },
+  "homepage": "https://github.com/linglanxin/dsh-aiagent-taskboard#readme",
+  "bugs": {
+    "url": "https://github.com/linglanxin/dsh-aiagent-taskboard/issues"
+  },
+  "keywords": ["dsh", "dsh-plugin", "taskboard", "ai-agent", "codex", "claude-code", "opendesign"],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": {
+      "default": "./client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "local.config.example.json",
+    "tools"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.2": "compatible"
+      },
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
